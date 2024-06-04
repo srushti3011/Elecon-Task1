@@ -1,20 +1,9 @@
-import './App.css'
-import Navbar from './Components/Navbar';
-import { Routes, Route } from 'react-router-dom';
-import EditProfile from './Components/EditProfile';
-import Profile from './Components/Profile';
-import CreateUser from './Components/CreateUser';
-
-function App() {
+import React from 'react'
+import '../App.css'
+const EditProfile = () => {
   return (
     <>
-      <Navbar/>
-      <Routes>
-        <Route path='/editprofile' element={<EditProfile/>}></Route>
-        <Route path='/userprofile' element={<Profile/>}></Route>
-        <Route path='/createuser' element={<CreateUser/>}></Route>
-      </Routes>
-      {/* <div className='outer'>
+    <div className='outer'>
         <div className='topellipse'>
           <h1 className='main-head'>
             &gt;Edit Profile
@@ -133,9 +122,9 @@ function App() {
             Save changes
           </button>
         </form>
-      </div> */}
-    </>
-  );
+      </div>
+      </>
+  )
 }
 
-export default App;
+export default EditProfile
