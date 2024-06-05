@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import EditProfile from './Components/EditProfile';
 import Profile from './Components/Profile';
 import CreateUser from './Components/CreateUser';
+import DeleteUser from './Components/DeleteUser';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/editprofile' element={<EditProfile/>}></Route>
         <Route path='/userprofile' element={<Profile/>}></Route>
         <Route path='/createuser' element={<CreateUser/>}></Route>
+        <Route path='/deleteuser' element={<DeleteUser/>}></Route>
       </Routes>
       {/* <div className='outer'>
         <div className='topellipse'>

@@ -16,7 +16,7 @@ const Navbar = () => {
                 <Link className='links' to={'/createuser'}>Create User</Link>
             </li>
             <li>
-                <Link className='links'>Delete User</Link>
+                <Link className='links' to={'/deleteuser'}>Delete User</Link>
             </li>
             <li>
                 <Link className='links'>User Cards</Link>

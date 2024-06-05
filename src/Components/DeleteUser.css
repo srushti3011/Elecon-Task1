@@ -1,0 +1,61 @@
+  .container {
+    background-color: white; /* Keeping container background white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow effect */
+    width: 120%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 40px;
+    font-weight: 400;
+  }
+  
+  .delete_heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1d1002; /* Applying the new color to the heading */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  thead {
+    background-color: #E8E2DC; /* Applying the new color */
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #E8E2DC; /* Applying the new color */
+  }
+  
+  th {
+    cursor: pointer;
+  }
+  
+  tr:hover {
+    background-color: #D3C7BC; /* Slightly darker shade for hover effect */
+  }
+  
+  .delete {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .delete_button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #E8E2DC; /* Applying the new color */
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .delete_button:hover {
+    background-color: #D3C7BC; /* Slightly darker shade of the new color */
+  }
