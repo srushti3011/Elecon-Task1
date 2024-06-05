@@ -5,6 +5,7 @@ import EditProfile from './Components/EditProfile';
 import Profile from './Components/Profile';
 import CreateUser from './Components/CreateUser';
 import DeleteUser from './Components/DeleteUser';
+import Login from './Components/Login';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/userprofile' element={<Profile/>}></Route>
         <Route path='/createuser' element={<CreateUser/>}></Route>
         <Route path='/deleteuser' element={<DeleteUser/>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
       </Routes>
       {/* <div className='outer'>
         <div className='topellipse'>
