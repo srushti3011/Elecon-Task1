@@ -1,0 +1,71 @@
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #7d5c40;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: -2px;
+  }
+  
+  .header_head{
+    color: white;
+    font-weight: 500;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    margin-top: -1px;
+  }
+  .list-head, td {
+    padding: 10px;
+    /* border: 1px solid #E82DC; */
+    background-color: #E8E2DC;
+    text-align: left;
+    font-weight: 400;
+  }
+  
+  .list-head {
+    background-color: #e9cdb0;
+    font-weight: 800;
+  }
+  
+  .badge {
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
+  }
+  
+  .badge-active {
+    background-color: #28a745;
+  }
+  
+  .badge-pending {
+    background-color: #ffc107;
+  }
+  
+  .badge-banned {
+    background-color: #dc3545;
+  }
+  
+  .badge-rejected {
+    background-color: #6c757d;
+  }
