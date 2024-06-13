@@ -1,0 +1,64 @@
+.company-list {
+    /* font-family: Arial, sans-serif; */
+    padding: 50px;
+    max-width: 900px;
+    margin: auto;
+    background-color: rgb(191, 166, 166);
+    /* height: 530px; */
+  }
+  
+  .hirers-head {
+    text-align: center;
+    color: #333;
+  }
+  
+  .hirers-ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .company-item {
+    display: flex;
+    align-items: center;
+    background: #e1d9d9;
+    border: 1px solid #0b0b0b;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    /* transition: background 0.3s; */
+  }
+  
+  .company-item:hover {
+    background: #f1f1f1;
+  }
+  
+  .company-logo {
+    width: 150px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .company-details {
+    flex: 1;
+  }
+  
+  .company-details h2 {
+    margin: 0 0 10px;
+  }
+  
+  .company-details p {
+    margin: 0 0 10px;
+  }
+  
+  .company-details a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  
+  .company-details a:hover {
+    text-decoration: underline;
+  }
+
+  .topcomp{
+    font-weight: 500;
+  }

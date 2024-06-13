@@ -1,0 +1,105 @@
+.home-background {
+    background: radial-gradient(circle at 90% 90%, rgba(255, 255, 255, 0.8), transparent),
+                radial-gradient(circle at 90% 10%, rgba(219, 131, 0, 0.6), transparent),
+                radial-gradient(circle at 10% 90%, rgba(76, 63, 6, 0.4), transparent);
+    background-color: #2c1f00; 
+    height: 537px;  
+    width: 1280px;
+    margin-top: -2px;
+}
+
+.home-head {
+    /* text-align: center; */
+    font-weight: 700;
+    font-size: 40px;
+    /* margin: auto; */
+    margin-left: 150px;
+    margin-top:23vh;
+    left: 50%;
+    transform: scale(0); /* Initial state: scaled down to 0 */
+    animation: loadEffect 4s forwards; /* Apply the animation */
+    width: fit-content;
+    color: #E8E2DC;
+}
+
+@keyframes loadEffect {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.home-subhead{
+    font-weight: 500;
+    font-size: 20px;
+    margin: auto;
+    width :480px;
+    margin-left: 150px;
+    color: #E8E2DC;
+    animation: loadEffect 4s forwards; /* Apply the animation */
+    /* width: fit-content; */
+}
+
+.buttons{
+    background-color: #E8E2DC;
+    padding: 10px;
+    width: fit-content;
+    font-weight: 400;
+    border-radius: 2px;
+    transform: scale(0); /* Initial state: scaled down to 0 */
+    animation: loadEffect 4s forwards; /* Apply the animation */
+    margin-left: 150px;
+    margin-top: 5vh;
+}
+
+.right-img{
+    background-image: url('../img/undraw_job_hunt_re_q203.svg');
+    height: 300px;
+    width: 300px;
+    /* height: fit-content; */
+    /* width: fit-content; */
+    background-size: cover;
+    margin-left: 780px;
+    transform: scale(0); /* Initial state: scaled down to 0 */
+    animation: loadEffect 4s forwards; /* Apply the animation */
+    /* background-color: aqua; */
+    margin-top: -260px;
+    z-index: 2;
+}
+
+.aboutus{
+    font-weight: 400;
+    color: aliceblue;
+    margin-top: 100px;
+}
+
+.about-head{
+    text-align: center;
+    font-size: 50px;
+}
+
+.about-content{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    background-color: #E8E2DC;
+    color: #2c1f00;
+    margin-bottom: 200px;
+    font-size: 18px;
+    padding: 20px;
+    box-shadow: 5px 5px 30px #E8E2DC;
+}
+
+.start-link{
+    text-decoration: none;
+    color: #2c1f00;
+}
+
+.start-link:hover{
+    font-weight: 700;
+    /* color: white; */
+}

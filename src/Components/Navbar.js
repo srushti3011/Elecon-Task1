@@ -7,10 +7,11 @@ const Navbar = () => {
       <div>
         <ul>
             <li>
-                <Link className='links' to={'/login'}>Login</Link>
+                <Link className='links' to={'/'}>Home</Link>
             </li>
             <li>
-                <Link className='links' to={'/signup'}>Sign Up</Link>
+                <Link className='links' to={'/login'}>Login</Link>
+                {/* <Link className='links' to={'/signup'}>Sign Up</Link> */}
             </li>
             <li>
                 <Link className='links' to={'/createuser'}>Create User</Link>
@@ -19,7 +20,7 @@ const Navbar = () => {
                 <Link className='links' to={'/deleteuser'}>Delete User</Link>
             </li>
             <li>
-                <Link className='links'>User Cards</Link>
+                <Link className='links' to={'/usercards'}>User Cards</Link>
             </li>
             <li>
                 <Link className='links' to={'/userlist'}>User List</Link>

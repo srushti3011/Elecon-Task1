@@ -8,10 +8,16 @@ import DeleteUser from './Components/DeleteUser';
 import Login from './Components/Login';
 import SignUp from './Components/SignUp';
 import Header from './Components/UserList/Header'
-// import StatusBadge from './Components/UserList/StatusBadge'
-// import UserItem from './Components/UserList/UserItem'
 import UserList from './Components/UserList/UserList'
-
+import Home from './Components/Home';
+import UserCards from './Components/UserCards';
+import Categories from './Components/JobPortalComps/Categories';
+import JobTypeForm from './Components/JobPortalComps/JobTypeForm';
+import JobList from './Components/JobPortalComps/JobList';
+import JobState from './Context/JobState';
+import ViewJob from './Components/JobPortalComps/ViewJob';
+import ApplyNow from './Components/JobPortalComps/ApplyNow';
+import TopHirers from './Components/JobPortalComps/TopHirers';
 
 function UserListPage() {
   const users = [
@@ -34,15 +40,25 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-        <Route path='/editprofile' element={<EditProfile />}></Route>
-        <Route path='/userprofile' element={<Profile />}></Route>
-        <Route path='/createuser' element={<CreateUser />}></Route>
-        <Route path='/deleteuser' element={<DeleteUser />}></Route>
-        <Route path='/login' element={<Login />}></Route>
-        <Route path='/signup' element={<SignUp />}></Route>
-        <Route path='/userlist' element={<UserListPage/>}></Route>
-      </Routes>
+      <JobState>
+        <Routes>
+          <Route path='/editprofile' element={<EditProfile />}></Route>
+          <Route path='/userprofile' element={<Profile />}></Route>
+          <Route path='/createuser' element={<CreateUser />}></Route>
+          <Route path='/deleteuser' element={<DeleteUser />}></Route>
+          <Route path='/login' element={<Login />}></Route>
+          <Route path='/signup' element={<SignUp />}></Route>
+          <Route path='/userlist' element={<UserListPage />}></Route>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/usercards' element={<UserCards />}></Route>
+          <Route path='/categories' element={<Categories />}></Route>
+          <Route path='/jobtypeform' element={<JobTypeForm />}></Route>
+          <Route path='/joblist' element={<JobList />}></Route>
+          <Route path='/showjob' element={<ViewJob/>}></Route>
+          <Route path='/apply' element={<ApplyNow/>}></Route>
+          <Route path='/tophirers' element={<TopHirers/>}></Route>
+        </Routes>
+      </JobState>
     </>
   );
 }
